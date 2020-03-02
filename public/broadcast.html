@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Broadcaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="WebRTC Video Broadcast.">
+    <meta name="author" content="Brian Mau">
+    <link href="/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <video playsinline autoplay muted></video> -->
+    <video id="video" controls playsinline autoplay loop download="false" disablePictureInPicture>
+        <source src="video/chrome.webm" type="video/webm"/>
+        <source src="video/chrome.mp4" type="video/mp4"/>
+        <p>This browser does not support the video element.</p>
+    </video>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/index.js"></script>
+    <script src="/broadcast.js"></script>
+</body>
+
+</html>
